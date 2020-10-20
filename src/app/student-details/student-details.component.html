@@ -1,0 +1,64 @@
+
+<ion-content>
+  <div class="content-box">
+      <div class="row menubar">
+          <img src="assets/images/back.png" (click)="back()">
+      </div>
+      <div class="stdnt-dtls">
+        <!-- <div class="prf-data">
+          <img src="/assets/images/avator.png" alt="">
+          <h4>Abir Adak</h4>
+          <h6>abcdef@gmail.com</h6>
+          <p>9875642569</p>
+        </div> -->
+        <div class="prf-data">
+          <img src="http://159.89.171.95{{ studentDetails.image }}" alt="">
+          <h4>{{ studentDetails.name }}</h4>
+          <h6><a href="mailto:{{ studentDetails.email }}">{{ studentDetails.email }}</a></h6>
+          <p><a href="tel:+91{{ studentDetails.phone_number }}">{{ studentDetails.phone_number }}</a></p>
+        </div>
+        <ul>
+          <li *ngFor = "let data of detailsData">
+            <div class="batch-data product-box">
+              <p><span>Packge Name:</span>{{ data.package_name }}</p>
+              <p><span>Joining Date:</span> {{ data.package_joining_date }}</p>
+              <p><span>Price:</span> Rs: {{ data.package_price }}/-</p>
+              <p><span>Course:</span> {{ data.package_course }}</p>
+              <p><span>Start Date:</span> {{ data.package_start_date }}</p>
+              <p><span>End Date:</span> {{ data.package_end_date }}</p>
+              <p><span>Subject:</span>{{ subjects }}</p>
+            </div>
+          </li>
+        </ul>
+        <!-- <div class="batch-data product-box">
+          <p><span>Name Of Batch:</span>Phython</p>
+          <p><span>Joining Date:</span> 12 Aug 2050</p>
+          <p><span>Price:</span> Rs: 25000/-</p>
+          <p><span>Course:</span> Course 1</p>
+          <p><span>Subject:</span> Math, Chemistry</p>
+          <p><span>Start Date:</span> 15 Sep 2020</p>
+          <p><span>End Date:</span> 25 Sep 2020</p>
+        </div> -->
+        <!-- <div class="batch-data product-box">
+          <p><span>Name Of Batch:</span>AWS</p>
+          <p><span>Joining Date:</span> 12 Aug 2050</p>
+          <p><span>Price:</span> Rs: 25000/-</p>
+          <p><span>Course:</span> Course 1</p>
+          <p><span>Subject:</span> Math, Chemistry</p>
+          <p><span>Start Date:</span> 15 Sep 2020</p>
+          <p><span>End Date:</span> 25 Sep 2020</p>
+
+        </div>
+        <div class="batch-data product-box">
+          <p><span>Name Of Batch:</span>Angular</p>
+          <p><span>Joining Date:</span> 12 Aug 2050</p>
+          <p><span>Price:</span> Rs: 25000/-</p>
+          <p><span>Course:</span> Course 1</p>
+          <p><span>Subject:</span> Math, Chemistry</p>
+          <p><span>Start Date:</span> 15 Sep 2020</p>
+          <p><span>End Date:</span> 25 Sep 2020</p>
+          
+        </div> -->
+      </div>
+  </div>      
+</ion-content>

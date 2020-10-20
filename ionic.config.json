@@ -1,0 +1,7 @@
+{
+  "name": "mbbs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

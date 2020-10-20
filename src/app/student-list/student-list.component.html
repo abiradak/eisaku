@@ -1,0 +1,117 @@
+
+
+<ion-content>
+    <div class="content-box">
+        <div class="row menubar">
+            <img src="assets/images/back.png" (click)="back()">
+        </div>
+        <!-- <div class="row menubar2">
+            <img src="assets/images/logo.png">
+        </div> -->
+    <div class="container">
+      <ul>
+        <li *ngFor = "let students of studentsData">
+          <div class="product-box">
+            <div class="row  no-gutters">
+              <!-- <div class="col-2 product-description">
+                <img src="/assets/images/avator.png" alt="">
+              </div> -->
+              <div class="col-7 student-details">
+                <h4>{{ students.user_name }}</h4>
+                <h6>Test Live</h6>
+                <p>Swift</p>
+                <!-- <p>Enroll in <span>{{ students.batchCount }}</span> Batches</p> -->
+              </div>
+              
+              <div class="col-3 detail-btn">
+                <a [routerLink] = "['/student-details/', students.id]"> Details</a>
+              </div>
+              
+              <div class="col-3">
+                <ion-toggle slot="start" name="kiwi" color="success" (click)="changeFeedback(students.id , students.feedback_status)" [(ngModel)]="students.feedback_status"></ion-toggle>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- <div class="product-box">
+        <div class="row  no-gutters ">
+          
+          <div class="col-2 product-description">
+            
+            <img src="/assets/images/avator.png" alt="">
+          </div>
+          <div class="col-7 student-details">
+            <h4>Abir Adak</h4>
+            <h6>abcd@gmail.com</h6>
+            <p>9874563215</p>
+            <p>Enroll in <span>2</span> Batches</p>
+          </div>
+    
+          <div class="col-3 detail-btn">
+            <a href="/renewal"> Details</a>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="product-box">
+        <div class="row  no-gutters ">
+          
+          <div class="col-2 product-description">
+            
+            <img src="/assets/images/avator.png" alt="">
+          </div>
+          <div class="col-7 student-details">
+            <h4>Abir Adak</h4>
+            <h6>abcd@gmail.com</h6>
+            <p>9874563215</p>
+            <p>Enroll in <span>2</span> Batches</p>
+          </div>
+    
+          <div class="col-3 detail-btn">
+            <a href="/renewal"> Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="row  no-gutters ">
+          
+          <div class="col-2 product-description">
+            
+            <img src="/assets/images/avator.png" alt="">
+          </div>
+          <div class="col-7 student-details">
+            <h4>Abir Adak</h4>
+            <h6>abcd@gmail.com</h6>
+            <p>9874563215</p>
+            <p>Enroll in <span>2</span> Batches</p>
+          </div>
+    
+          <div class="col-3 detail-btn">
+            <a href="/renewal"> Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="row  no-gutters ">
+          
+          <div class="col-2 product-description">
+            
+            <img src="/assets/images/avator.png" alt="">
+          </div>
+          <div class="col-7 student-details">
+            <h4>Abir Adak</h4>
+            <h6>abcd@gmail.com</h6>
+            <p>9874563215</p>
+            <p>Enroll in <span>2</span> Batches</p>
+          </div>
+    
+          <div class="col-3 detail-btn">
+            <a href="/renewal"> Details</a>
+          </div>
+        </div>
+      </div> -->
+        
+        
+      </div>
+  </div>
+</ion-content>
